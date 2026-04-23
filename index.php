@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <!--Font for Madimi One-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+        <!--Link css stylesheet-->
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+        <style>
+            
+            .footer{
+                width: 100%;
+                height: 70.5px;
+                background-image: url(pic/main\ background\ 2.png);
+                background-size: cover;
+            }
+
+            .header{
+                height: 66px;
+            }
+
+            .home,.current_pg,.sign,.log{
+                font-size: 18px;
+            }
+
+
+            .main{
+                flex-direction: row;
+            }
+            .overlap-image{
+                position: absolute;
+                width: auto;
+                z-index: 1; 
+                height:550px;
+                bottom:0;
+                right: 0px;
+            }
+    
+            </style>
+    </head>
+    <body>
+        <div>
+            <!--Navigation bar-->
+            <div class="header">
+                <div class="left-side">
+                    <img src="pic/logo.png" class="logo">
+                    <a href="index.php" class="current_pg">HOME</a> <!--unsign home page-->
+                    <a href="unsigned/key function.php" class="home">KEY FUNCTION</a>
+                    <a href="unsigned/about.php" class="home">ABOUT US</a> <!--unsign about page-->
+                    <a href="unsigned/features.php" class="home">FEATURES</a> <!--unsign features page-->
+                    <a href="unsigned/contact.php" class="home">CONTACT</a>
+                    </div>
+        
+                    <div class="right-side">
+                        <a href="sign up.php" class="sign">SIGN UP</a>
+                        <a href="log in.php" class="log">LOG IN</a>
+                    </div>
+    
+            </div>
+            <div class="content">
+                <div class="line"></div>
+                <div class="main">
+                    <div class="Home Column1">
+                        <div class="text-container">
+                            <h1 style="font-size: 58px;border:none;margin-bottom:0px;">ENHANCE YOUR TEACHING WITH<br>ADVANCE STRATEGIES</h1>
+                            <p style="font-size: 25px;z-index: 2;">Predict and implement the most effective teaching methods for your students</p>
+                            <button class="get-started-bt"><a href="unsigned/key function.php">GET STARTED</a></button>
+                        </div>
+                    </div>
+                    <div class="Home Column2">
+                            <img src="pic/home_girl.png" alt="girl_img" class="overlap-image">
+                    </div>
+                </div>
+                
+                <div class="line"></div>
+            
+            </div>
+            <div class="footer">
+                
+            </div>
+        </div>
+    </body>
+</html>
