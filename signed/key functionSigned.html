@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link href="../css/key functionSigned.css" rel="stylesheet">
+        
+
+        <style>
+            
+        </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-side">
+                <img src="../pic/logo.png" class="logo">
+            <a href="indexSigned.html" class="home">HOME</a> <!--unsign home page-->
+            <a href="key functionSigned.html" class="key_function">KEY FUNCTION</a>
+            <a href="aboutSigned.html" class="home">ABOUT US</a> <!--unsign about page-->
+            <a href="featuresSigned.html" class="home">FEATURES</a> <!--unsign feature page-->
+            <a href="contactSigned.html" class="home">CONTACT</a>
+            </div>
+
+            <div class="right-side">
+                <div class="profile-container">
+                    <img id="profile-icon" src="../pic/user.png" alt="Profile Icon" class="profile-icon">
+                    <div id="floating-menu" class="floating-menu">
+                        <p id="user-name">Liam Carter</p>
+                        <p id="user-email">liamcarter@example.com</p>
+                        <button id="logout-button" class="logout-button">Logout</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="line" style="position: absolute; margin-left: 10px; margin-top: 66px;"></div>
+        <div class="content">
+            <div class="main">
+                <div class="title-container">
+                    <div style="margin-left: 115px;">
+                        <p class="title">The Best Way To Find Your Own Teaching Strategies</p>
+                        <p class="details">Enter details about your teaching courses and students numbers to receive personalized teaching strategy recommendations.</p>
+                    </div>
+                    <img src="../pic/greengirl.png" class="greengirl">
+                </div>
+                <div class="main-info" style="height: 300px;">
+                    <div class="teaching">
+                        <p style="font-size: 20px; font-weight: 700; margin-bottom: 0;">Teaching Courses :</p>
+                        <input type="text" class="teach-input" id="course-name" placeholder="Course Name">
+                        <input type="text" class="teach-input" id="description-name" placeholder="Description Name">
+                        <select name="grade-level" id="grade-level" class="teach-input">
+                            <option value="none" selected disabled hidden>Grade Level</option>
+                            <option value="kindergarden">Kindergarden</option>
+                            <option value="primary">Primary School</option>
+                            <option value="lower-secondary">Lower-Secondary School</option>
+                            <option value="upper-secondary">Upper-Secondary School</option>
+                            <option value="university/college">University/College</option>
+                        </select>
+                    </div>
+                    <div class="teaching" style="margin-right: 100px;">
+                        <p style="font-size: 20px; font-weight: 700; margin-bottom: 0;">Student Numbers :</p>
+                        <input type="number" class="teach-input" id="number-of-students" placeholder="Number of Students">
+                        <select name="student-performance" id="student-performance" class="teach-input">
+                            <option value="none" selected disabled hidden>Student Performance</option>
+                            <option value="all">All</option>
+                            <option value="struggling">Struggling</option>
+                            <option value="average">Average</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="margin-bottom: 50px; width: 100%;">
+                    <div class="additional" style="margin-right: 100px;">
+                        <p id="test"></p>
+                        <p style="font-size: 20px; font-weight: 700; margin-bottom: 0;">Additional Information :</p>
+                        <input type="text" class="teach-input" id="teaching-style" placeholder="Teaching Style Preference (e.g., Collaborative)">
+                        <select name="technology-availability" id="technology-availability" class="teach-input">
+                            <option value="none" selected disabled hidden>Technology Avaibility</option>
+                            <option value="low">Low</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="high">High</option>
+                        </select>
+                        <input type="text" class="teach-input" id="special-needs" placeholder="Special Needs Accommodations (e.g., Assistive Technology)">
+                        <input type="number" class="teach-input" id="years-of-experience" placeholder="Years of Experience">
+                        <input type="number" class="teach-input" id="teaching-duration" placeholder="Teaching Duration (minutes)">
+                    </div>
+                </div>
+                <div style="color: white; margin-bottom: 70px; margin-top: 20px;">
+                    <button id="generate-button" class="button" style="border: none;">Generate Recommendations</button>
+                </div>
+                
+                
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="footer">
+            <p>s           </p>
+            <p>s</p>
+        </div>
+        <script>
+            document.getElementById('generate-button').addEventListener('click', function() {
+                // Capture the values from the inputs
+                const courseName = document.getElementById('course-name').value.toLowerCase();
+                const courseDescription = document.getElementById('description-name').value.toLowerCase();
+                const gradeLevel = document.getElementById('grade-level').value;
+                const numberOfStudents = document.getElementById('number-of-students').value;
+                const studentPerformance = document.getElementById('student-performance').value;
+                const teachingStyle = document.getElementById('teaching-style').value.toLowerCase(); // Convert to lowercase for matching
+                const technologyAvailability = document.getElementById('technology-availability').value;
+                const specialNeeds = document.getElementById('special-needs').value.toLowerCase();
+                const yearsOfExperience = document.getElementById('years-of-experience').value;
+                const teachingDuration = document.getElementById('teaching-duration').value;
+        
+                // Calculate the best strategy based on the inputs and weights
+                const bestStrategy = calculateBestStrategy(courseName, courseDescription, gradeLevel, numberOfStudents, studentPerformance, 
+                teachingStyle, technologyAvailability, specialNeeds, yearsOfExperience, teachingDuration);
+        
+                // Redirect to the corresponding strategy page (e.g., formative.html, groupwork.html)
+                window.location.href = bestStrategy + "Signed.html";  // Redirect dynamically based on the strategy
+                //document.getElementById("test").innerHTML = bestStrategy;
+                //window.location.href = "dummy.html"
+
+                //Store the value in session storage
+                sessionStorage.setItem('courseName', document.getElementById('course-name').value);
+                sessionStorage.setItem('courseDescription', document.getElementById('description-name').value);
+                sessionStorage.setItem('gradeLevel', gradeLevel);
+                sessionStorage.setItem('numberOfStudents', numberOfStudents);
+                sessionStorage.setItem('studentPerformance', studentPerformance);
+                sessionStorage.setItem('teachingStyle', document.getElementById('teaching-style').value);
+                sessionStorage.setItem('technologyAvailability', technologyAvailability);
+                sessionStorage.setItem('specialNeeds', document.getElementById('special-needs').value);
+                sessionStorage.setItem('yearsOfExperience', yearsOfExperience);
+                sessionStorage.setItem('teachingDuration', teachingDuration);
+                
+            });
+        
+            function calculateBestStrategy(courseName, courseDescription, gradeLevel, numberOfStudents, studentPerformance, 
+            teachingStyle, technologyAvailability, specialNeeds, yearsOfExperience, teachingDuration) {
+                // Weights for each input (expressed as percentages)
+                const weights = {
+                    courseName: 0.1,  // Weight for class size
+                    courseDescription: 0.05,  
+                    gradeLevel: 0.15, 
+                    numberOfStudents: 0.05,
+                    studentPerformance: 0.15,
+                    teachingStyle: 0.15,
+                    technologyAvailability: 0.15,
+                    specialNeeds: 0.15,
+                    yearsOfExperience: 0.05,
+                    teachingDuration: 0.05
+                };
+        
+                // Scores for the strategies based on the input values
+                const scores = {
+                    "Personalized Strategy": { 
+                        //Course Info
+                        courseName: courseName.includes("science") || courseName.includes("english") || courseName.includes("mathematics") ? 2 : 1,
+                        courseDescription: (() => {
+                        const keywords = ["individual", "custom", "tailored", "one-to-one", "adaptive", "specific needs"];
+                        const matches = keywords.filter(keyword => courseDescription.includes(keyword)).length;
+                        return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        gradeLevel: gradeLevel.includes("primary") || gradeLevel.includes("lower-secondary") || gradeLevel.includes("upper-secondary") || gradeLevel.includes("university/college") ? 2 : 1,
+                        
+                        //Student Info
+                        students: (numberOfStudents>=10 && numberOfStudents<=20) ? 3 :
+                        (numberOfStudents>=0 && numberOfStudents<=30) ? 2 : 1,
+                        studentPerformance: studentPerformance.includes("all") ? 2 : 1,
+                        
+                        //Additional Info
+                        teachingStyle: (() => {
+                            const keywords = ["student-centered","flexible"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        technologyAvailability: technologyAvailability.includes("high") ? 2 : 1,
+                        specialNeeds: (() => {
+                            const keywords = ["iep","differentiated instruction","assistive technology"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        yearsOfExperience: yearsOfExperience>=3 ? 2 : 1,
+                        teachingDuration: (teachingDuration>=30 && teachingDuration<=60) ? 3 :
+                        (numberOfStudents>=20 && numberOfStudents<=70) ? 2 : 1,
+                    },
+                    "Real-Time Feedback": { 
+                        //Course Info
+                        courseName: courseName.includes("mathematics") || courseName.includes("language") || courseName.includes("science") ? 2 : 1,
+                        courseDescription: (() => {
+                        const keywords = ["immediate", "instant", "live", "response", "on-the-spot", "quick correction"];
+                        const matches = keywords.filter(keyword => courseDescription.includes(keyword)).length;
+                        return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        gradeLevel: gradeLevel.includes("lower-secondary") || gradeLevel.includes("upper-secondary") || gradeLevel.includes("university/college") ? 2 : 1,
+                        
+                        //Student Info
+                        students: (numberOfStudents>=15 && numberOfStudents<=25) ? 3 :
+                        (numberOfStudents>=5 && numberOfStudents<=35) ? 2 : 1,
+                        studentPerformance: studentPerformance.includes("struggling") || studentPerformance.includes("average") ? 2 : 1,
+                        
+                        //Additional Info
+                        teachingStyle: (() => {
+                            const keywords = ["responsive","supportive"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        technologyAvailability: technologyAvailability.includes("high") || technologyAvailability.includes("moderate") ? 2 : 1,
+                        specialNeeds: (() => {
+                            const keywords = ["frequent check-ins","alternative communication tools"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        yearsOfExperience: yearsOfExperience>=2 ? 2 : 1,
+                        teachingDuration: (teachingDuration>=20 && teachingDuration<=40) ? 3 :
+                        (numberOfStudents>=10 && numberOfStudents<=50) ? 2 : 1,
+                    },
+                    "Interactive Lessons": { 
+                        //Course Info
+                        courseName: courseName.includes("history") || courseName.includes("science") || courseName.includes("art") ? 2 : 1,
+                        courseDescription: (() => {
+                        const keywords = ["hands-on", "group", "collaborative", "discussion", "activities", "participation"];
+                        const matches = keywords.filter(keyword => courseDescription.includes(keyword)).length;
+                        return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        gradeLevel: gradeLevel.includes("kindergarden") || gradeLevel.includes("primary") || gradeLevel.includes("lower-secondary") ? 2 : 1,
+                        
+                        //Student Info
+                        students: (numberOfStudents>=20 && numberOfStudents<=30) ? 3 :
+                        (numberOfStudents>=10 && numberOfStudents<=40) ? 2 : 1,
+                        studentPerformance: studentPerformance.includes("all") ? 2 : 1,
+                        
+                        //Additional Info
+                        teachingStyle: (() => {
+                            const keywords = ["collaborative","engaging"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        technologyAvailability: technologyAvailability.includes("high") ? 2 : 1,
+                        specialNeeds: (() => {
+                            const keywords = ["visual aids","peer support","flexible grouping"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        yearsOfExperience: yearsOfExperience>=2 ? 2 : 1,
+                        teachingDuration: (teachingDuration>=30 && teachingDuration<=50) ? 3 :
+                        (numberOfStudents>=20 && numberOfStudents<=60) ? 2 : 1,
+                    },
+                    "Formative Assessment": { 
+                        //Course Info
+                        courseName: courseName.includes("english") || courseName.includes("mathematics") || courseName.includes("biology") ? 2 : 1,
+                        courseDescription: (() => {
+                        const keywords = ["continuous", "progress", "feedback", "quizzes", "regular", "ongoing assessment"];
+                        const matches = keywords.filter(keyword => courseDescription.includes(keyword)).length;
+                        return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        gradeLevel: gradeLevel.includes("primary") || gradeLevel.includes("lower-secondary") || gradeLevel.includes("upper-secondary") || gradeLevel.includes("university/college") ? 2 : 1,
+                        
+                        //Student Info
+                        students: (numberOfStudents>=15 && numberOfStudents<=30) ? 3 :
+                        (numberOfStudents>=5 && numberOfStudents<=40) ? 2 : 1,
+                        studentPerformance: studentPerformance.includes("struggling") || studentPerformance.includes("average") ? 2 : 1,
+                        
+                        //Additional Info
+                        teachingStyle: (() => {
+                            const keywords = ["reflective","adaptive"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        technologyAvailability: technologyAvailability.includes("high") || technologyAvailability.includes("moderate") ? 2 : 1,
+                        specialNeeds: (() => {
+                            const keywords = ["extended time","alternative formats"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        yearsOfExperience: yearsOfExperience>=1 ? 2 : 1,
+                        teachingDuration: (teachingDuration>=10 && teachingDuration<=30) ? 3 :
+                        (numberOfStudents>=0 && numberOfStudents<=40) ? 2 : 1,
+                    },
+                    "Math Games": { 
+                        //Course Info
+                        courseName: courseName.includes("mathematics") || courseName.includes("physics") ? 2 : 1,
+                        courseDescription: (() => {
+                        const keywords = ["fun", "game", "puzzle", "challenge", "play", "competition","gamified"];
+                        const matches = keywords.filter(keyword => courseDescription.includes(keyword)).length;
+                        return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        gradeLevel: gradeLevel.includes("kindergarden") || gradeLevel.includes("primary") || gradeLevel.includes("lower-secondary") ? 2 : 1,
+                        
+                        //Student Info
+                        students: (numberOfStudents>=20 && numberOfStudents<=30) ? 3 :
+                        (numberOfStudents>=10 && numberOfStudents<=40) ? 2 : 1,
+                        studentPerformance: studentPerformance.includes("struggling") || studentPerformance.includes("average") ? 2 : 1,
+                        
+                        //Additional Info
+                        teachingStyle: (() => {
+                            const keywords = ["fun","playful","structured"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        technologyAvailability: technologyAvailability.includes("high") || technologyAvailability.includes("moderate") ? 2 : 1,
+                        specialNeeds: (() => {
+                            const keywords = ["adaptive games","simplified instructions","visual supports"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        yearsOfExperience: yearsOfExperience>=1 ? 2 : 1,
+                        teachingDuration: (teachingDuration>=15 && teachingDuration<=30) ? 3 :
+                        (numberOfStudents>=5 && numberOfStudents<=40) ? 2 : 1,
+                    },
+                    "Read-Aloud Learnings": { 
+                        //Course Info
+                        courseName: courseName.includes("literature") || courseName.includes("history") || courseName.includes("language") ? 2 : 1,
+                        courseDescription: (() => {
+                        const keywords = ["reading", "narration", "comprehension", "story", "text", "oral", "discussion"];
+                        const matches = keywords.filter(keyword => courseDescription.includes(keyword)).length;
+                        return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        gradeLevel: gradeLevel.includes("kindergarden") || gradeLevel.includes("primary") ? 2 : 1,
+                        
+                        //Student Info
+                        students: (numberOfStudents>=10 && numberOfStudents<=20) ? 3 :
+                        (numberOfStudents>=0 && numberOfStudents<=30) ? 2 : 1,
+                        studentPerformance: studentPerformance.includes("struggling") || studentPerformance.includes("average") ? 2 : 1,
+                        
+                        //Additional Info
+                        teachingStyle: (() => {
+                            const keywords = ["patient","clear communicator"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        technologyAvailability: technologyAvailability.includes("low") || technologyAvailability.includes("moderate") ? 2 : 1,
+                        specialNeeds: (() => {
+                            const keywords = ["text-to-speech tools","audiobooks","written and oral prompts"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        yearsOfExperience: yearsOfExperience>=1 ? 2 : 1,
+                        teachingDuration: (teachingDuration>=20 && teachingDuration<=40) ? 3 :
+                        (numberOfStudents>=10 && numberOfStudents<=50) ? 2 : 1,
+                    },
+                    "Independent Learning": { 
+                        //Course Info
+                        courseName: courseName.includes("environmental science") || courseName.includes("economics") || courseName.includes("creative writing") ? 2 : 1,
+                        courseDescription: (() => {
+                        const keywords = ["self-paced", "individual", "explore", "research", "autonomy", "alone", "flexible"];
+                        const matches = keywords.filter(keyword => courseDescription.includes(keyword)).length;
+                        return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        gradeLevel: gradeLevel.includes("upper-secondary") || gradeLevel.includes("university/college") ? 2 : 1,
+                        
+                        //Student Info
+                        students: (numberOfStudents>=25 && numberOfStudents<=35) ? 3 :
+                        (numberOfStudents>=15 && numberOfStudents<=45) ? 2 : 1,
+                        studentPerformance: studentPerformance.includes("high") || studentPerformance.includes("average") ? 2 : 1,
+                        
+                        //Additional Info
+                        teachingStyle: (() => {
+                            const keywords = ["autonomous","supportive"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        technologyAvailability: technologyAvailability.includes("high") ? 2 : 1,
+                        specialNeeds: (() => {
+                            const keywords = ["guided breaks","customized pacing","assistive technology"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        yearsOfExperience: yearsOfExperience>=3 ? 2 : 1,
+                        teachingDuration: (teachingDuration>=30 && teachingDuration<=90) ? 3 :
+                        (numberOfStudents>=20 && numberOfStudents<=100) ? 2 : 1,
+                    },
+                    "Peer Teaching": { 
+                        //Course Info
+                        courseName: courseName.includes("computer science") || courseName.includes("mathematics") || courseName.includes("social studies") ? 2 : 1,
+                        courseDescription: (() => {
+                        const keywords = ["collaborative", "peer", "teach", "share", "present", "group", "students teaching"];
+                        const matches = keywords.filter(keyword => courseDescription.includes(keyword)).length;
+                        return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        gradeLevel: gradeLevel.includes("lower-secondary") || gradeLevel.includes("upper-secondary") || gradeLevel.includes("university/college") ? 2 : 1,
+                        
+                        //Student Info
+                        students: (numberOfStudents>=20 && numberOfStudents<=30) ? 3 :
+                        (numberOfStudents>=10 && numberOfStudents<=40) ? 2 : 1,
+                        studentPerformance: studentPerformance.includes("high") || studentPerformance.includes("average") ? 2 : 1,
+                        
+                        //Additional Info
+                        teachingStyle: (() => {
+                            const keywords = ["facilitative","mentoring"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        technologyAvailability: technologyAvailability.includes("high") || technologyAvailability.includes("moderate") ? 2 : 1,
+                        specialNeeds: (() => {
+                            const keywords = ["structured peer pairing","scaffolding","explicit instructions"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        yearsOfExperience: yearsOfExperience>=3 ? 2 : 1,
+                        teachingDuration: (teachingDuration>=20 && teachingDuration<=40) ? 3 :
+                        (numberOfStudents>=10 && numberOfStudents<=50) ? 2 : 1,
+                    },
+                    "Scaffold Instruction": { 
+                        //Course Info
+                        courseName: courseName.includes("physics") || courseName.includes("chemistry") || courseName.includes("grammar") ? 2 : 1,
+                        courseDescription: (() => {
+                        const keywords = ["step-by-step", "guided", "support", "gradual", "build", "assistance", "progression"];
+                        const matches = keywords.filter(keyword => courseDescription.includes(keyword)).length;
+                        return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        gradeLevel: gradeLevel.includes("kindergarden") || gradeLevel.includes("primary") || gradeLevel.includes("lower-secondary") ? 2 : 1,
+                        
+                        //Student Info
+                        students: (numberOfStudents>=10 && numberOfStudents<=25) ? 3 :
+                        (numberOfStudents>=0 && numberOfStudents<=35) ? 2 : 1,
+                        studentPerformance: studentPerformance.includes("struggling") || studentPerformance.includes("average") ? 2 : 1,
+                        
+                        //Additional Info
+                        teachingStyle: (() => {
+                            const keywords = ["guiding","structured"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        technologyAvailability: technologyAvailability.includes("high") || technologyAvailability.includes("moderate") ? 2 : 1,
+                        specialNeeds: (() => {
+                            const keywords = ["breakdown tasks","visual supports","use of manipulatives"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        yearsOfExperience: yearsOfExperience>=3 ? 2 : 1,
+                        teachingDuration: (teachingDuration>=30 && teachingDuration<=60) ? 3 :
+                        (numberOfStudents>=20 && numberOfStudents<=70) ? 2 : 1,
+                    },
+                    "Goal Setting": { 
+                        //Course Info
+                        courseName: courseName.includes("personal development") || courseName.includes("study skills") || courseName.includes("leadership") ? 2 : 1,
+                        courseDescription: (() => {
+                        const keywords = ["plan", "goal", "objective", "strategy", "achieve", "focus", "SMART", "target"];
+                        const matches = keywords.filter(keyword => courseDescription.includes(keyword)).length;
+                        return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        gradeLevel: gradeLevel.includes("upper-secondary") || gradeLevel.includes("university/college") ? 2 : 1,
+                        
+                        //Student Info
+                        students: (numberOfStudents>=10 && numberOfStudents<=25) ? 3 :
+                        (numberOfStudents>=0 && numberOfStudents<=35) ? 2 : 1,
+                        studentPerformance: studentPerformance.includes("all") ? 2 : 1,
+                        
+                        //Additional Info
+                        teachingStyle: (() => {
+                            const keywords = ["motivational","goal-oriented"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        technologyAvailability: technologyAvailability.includes("high") || technologyAvailability.includes("moderate") ? 2 : 1,
+                        specialNeeds: (() => {
+                            const keywords = ["visual goal tracking","simplified goals","frequent mentoring"];
+                            const matches = keywords.filter(keyword => teachingStyle.includes(keyword)).length;
+                            return matches === 1 ? 2 : matches >= 2 ? 3 : 1;
+                        })(),
+                        yearsOfExperience: yearsOfExperience>=2 ? 2 : 1,
+                        teachingDuration: (teachingDuration>=10 && teachingDuration<=20) ? 3 :
+                        (numberOfStudents>=0 && numberOfStudents<=30) ? 2 : 1,
+                    },
+                    
+                };
+        
+                // Calculate the weighted scores for each strategy
+                let bestStrategy = "";
+                let maxScore = 0;
+        
+                for (const strategy in scores) {
+                    let totalScore = 0;
+        
+                    // Calculate weighted score for each strategy
+                    Object.keys(weights).forEach(
+                        key => {
+                            if(scores[strategy][key]!==undefined){
+                                totalScore += weights[key] *scores[strategy][key];
+                            }else{
+                                document.getElementById("test").innerHTML = "Key not found in the strategy";
+                            }
+                        }
+                    )
+                    
+                    
+        
+                    // Compare with maxScore and update the best strategy if necessary
+                    if (totalScore > maxScore) {
+                        maxScore = totalScore;
+                        bestStrategy = strategy;
+                    }
+                    document.getElementById("test").innerHTML = bestStrategy;
+                }
+        
+                return bestStrategy.toLowerCase().replace(" ", "");  // Convert to lowercase and remove spaces for page URLs
+            }//can only convert one time. if two space appears, the second space will not be converted
+        
+            // Helper function to check if any keyword is in the input string
+            function checkKeywords(input, keywords) {
+                for (let i = 0; i < keywords.length; i++) {
+                    if (input.includes(keywords[i].toLowerCase())) {
+                        return true; // Keyword found in the input
+                    }
+                }
+                return false; // No keywords found in the input
+            }
+        </script>
+        <script src="../js/log_out.js"></script>
+    </body>
+</html>
