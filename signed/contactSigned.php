@@ -1,0 +1,95 @@
+<?php
+    //Meneruskan session Sebelumnya
+    session_start();
+    //Menyemak Sama Ada Pengguna Berada Dalam session Serta Pemboleh Ubah session Diumpukkan Nilai
+    //Jika Tidak, Halaman Tidak Akan Dipaparkan
+    if (isset($_SESSION['Email']) && $_SESSION['LogIn']==true) {
+        $username = $_SESSION['Username'];
+        $email = $_SESSION['Email'];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link href="../css/contactSigned.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-side">
+                <img src="../pic/logo.png" class="logo">
+            <a href="indexSigned.php" class="home">HOME</a> <!--signed home page-->
+            <a href="key functionSigned.php" class="home">KEY FUNCTION</a>
+            <a href="aboutSigned.php" class="home">ABOUT US</a> <!--signed about page-->
+            <a href="featuresSigned.php" class="home">FEATURES</a> <!--signed feature page-->
+            <a href="contactSigned.php" class="contact">CONTACT</a>
+            </div>
+
+            <div class="right-side">
+                <div class="profile-container">
+                    <img id="profile-icon" src="../pic/user.png" alt="Profile Icon" class="profile-icon">
+                    <div id="floating-menu" class="floating-menu">
+                        <p id="user-name" class="username"><?php echo htmlspecialchars($username); ?></p>
+                        <p id="user-email" class="email"><?php echo htmlspecialchars($email); ?></p>
+                        <button id="logout-button" class="logout-button">Logout</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="content">
+            <div class="line"></div>
+            <div class="main">
+                <img class="redgirl" src="../pic/redgirl.png">
+                <div class="main-content">
+                    <div class="title">CONTACT US</div>
+                    <div class="detail">
+                        <img src="../pic/phone.png" style="height: 60%;">
+                        <p class="number">+60-345678912</p>
+                    </div>
+                    <div class="detail" style="width: 39%; margin-left: -85px;">
+                        <img src="../pic/emel.png" style="height: 60%;">
+                        <p class="number">blablabla@gmail.com</p>
+                    </div>
+                    <div class="detail"style="width: 27%; margin-left: -188px;" >
+                        <img src="../pic/ig.png" style="height: 75%; margin-left: 5px;">
+                        <p class="number">blabla_bla</p>
+                    </div>
+                    <div class="detail" style="width: 25%; margin-left: -188px; " >
+                        <img src="../pic/fb.png" style="height: 70%;">
+                        <p class="number">blablabla</p>
+                    </div>
+                </div>
+                <img class="yellowgirl" src="../pic/yellowgirl.png">
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="footer">
+            
+        </div>
+        <script src="../js/log_out.js"></script>
+    </body>
+</html>
+<?php
+    }else{
+        //Memaparkan Mesej Jika Pengguna Tidak Log Masuk Terlebih Dahulu
+        //Memaparkan Halaman Log Masuk
+        echo "<script>alert('Please Login In.');
+        window.location.replace('log in.php');
+        </script>";
+    }
+    
+?>
