@@ -16,7 +16,7 @@ A dynamic web-based platform developed as part of a **Human-Computer Interaction
 
 ### 📸 Screenshots
 <img width="1918" height="1017" alt="hci" src="https://github.com/user-attachments/assets/bdc254f5-f66d-410f-92de-eaef0f83f187" />
-
+&nbsp;
 <img width="1918" height="907" alt="hci2" src="https://github.com/user-attachments/assets/d63764ac-37e3-4eec-a389-e237724e29d6" />
 
 ### 📝 My Contribution
